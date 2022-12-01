@@ -1,0 +1,71 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(-45deg, #6e1a00, #ab6346, #460000, #eaa400);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+#password, #submit{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    text-align: center;
+    font-size: xx-large;
+    transform: translate(-50%, -50%);
+}
+
+#submit{
+    top: 80%;
+    background-color: RGBA(255,255,255,0.1);
+    transition: 0.6s;
+}
+
+#submit:hover{
+    cursor:pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
